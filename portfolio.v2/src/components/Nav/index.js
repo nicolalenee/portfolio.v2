@@ -1,31 +1,46 @@
 import React from 'react';
+import Bootstrap from 'bootstrap';
 
 function Nav() {
 
-  const tabs= [
-    { name: "About Me" },
-    { name: "Portfolio" },
-    { name: "Contact" }, 
-    { name: "Resumé" }
-  ];
-  // function to change the tab displays on click
-  function tabSelected(tab) {
-    console.log(`${tab} clicked`)
+  const tabs = [
+    {
+      name: 'About Me',
+      description: 'Get to know a little bit more about me'
+    },
+    {
+      name: 'Portfolio',
+      description: "View the projects that I've worked on"
+    },
+    {
+      name: 'Contact',
+      description: 'Reach out'
+    },
+    {
+      name: 'Resumé',
+      description: 'A downloadable PDF of my current Resumé'
+    }
+  ]
+  function tabSelected(name) {
+    console.log(`${name} clicked`)
   }
+
 
   return (
     <header>
-      <h2>
+      <h1>
         <a href="/">
-          Nicola's Portfolio
+          🌻 Nicola Marble
         </a>
-      </h2>
+      </h1>
 
       <nav>
         <ul>
           {tabs.map((tab) => (
-            <li key= {tab.name} >
-              <a href="#{tab.name}" onClick={() => tabSelected(tab.name)}>{tab.name}</a>
+            <li key= {tab.name}>
+              <a href={tab.name} onClick={tabSelected}>
+                {tab.name}
+              </a>
             </li>
           ))}
         </ul>
