@@ -33,10 +33,12 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 a {
   text-decoration: none;
   color: var(--secondary);
 }
+
 a:hover {
   color: var(--teritary);
   transition: color .400s linear 0.5s;
@@ -46,17 +48,76 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
+
 nav li { 
   padding: 3px;
   font-weight: bold;
 }
+
 li {
   margin: 10px;
   padding: 3px;
 }
+
 li a {
   font-size: 22px;
 }
+
 .navActive {
   color: white;
+}
+
+.page-title {
+  font-size: 40px;
+}
+h1,h2,h3,h4,h5 { 
+  color: var(--secondary);
+}
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.component-wrapper {
+  margin: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.side-button p {
+  background-color: white;
+  text-align: center;
+  font-size: 16px;
+  border: 2px solid var(--secondary);
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold; 
+
+}
+
+
+.about-wrapper {
+  border: 2px solid var(--secondary);
+  border-radius: 10px;
+  color: #343335;
+  font-size: 18px;
+  padding: 15px;
+  background-color: white;
+  opacity: 80%;
+  box-shadow: 1px 10px 10px #70697B;
+}
+.top {
+  margin-bottom: 10px;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  margin: 10px;
+}
+.right {
+  margin-left: 10px;
 }
